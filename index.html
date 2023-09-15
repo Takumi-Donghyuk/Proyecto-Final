@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./src/main.js" defer></script>  
+</head>
+<body>
+    <div class="overlay">
+            <svg class="logoOverlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
+                <title>Academlo Logo</title>
+                <g>
+                    <g>
+                        <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+                        </path>
+                        <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+    </div>
+    
+        <header>
+            <nav class="padreNavegador">
+                <div class="primeraParteNavegador">
+                    <div class="Academlo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="iconoAcademlo">
+                             <title>Academlo Logo</title>
+                             <g>
+                                <g>
+                                <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                                </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>STORE</span>
+                    </div>
+                    <div class="menu">
+                    <ul class="menu">
+                        <li><a id="Home" href="#">Home</a></li>
+                        <li><a id="productosenlace" href="#products">Products</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="iconos"> 
+                    <i class='bx bx-sun' id="iconoSol"></i>
+                    <i class="bx bx-moon" id="iconoLuna"></i>
+                    <i class="bx bx-shopping-bag iconoBolso">
+                        <div class="numeroProductos"><span id="totalItems1">0</span></div>
+                    </i>
+                    <i class="bx bxs-dashboard iconoCuadrado"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mainMobile">
+            <section class="introduccionPadre">
+                <div class="invenIntro"></div>
+                <div class="introinfo">
+                    <h2>New Sweatshirt <br> COLLECTIONS 2024</h2>
+                    <p>Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the <br> 2022 series, with a modern design.</p>
+                    <p id="precio">$14.00</p>
+                    <a href="#products">Show more</a>
+                </div>
+                <div class="imageninfo">
+                    <img  src="./src/imágenes/Saco_negro_principal.png" alt="Saco Negro">
+                </div>
+            </section>
+            
+
+
+
+
+            <div class="filtrado">
+                <div class="buttons">
+                    <button class="buttonCuadro" data-filter="all">
+                        <p class="buttonH3">Show all</p>
+                        <p class="buttonP">Show all products</p>
+                    </button>
+                    <button class="buttonCuadro" data-filter=".shirt">
+                        <p class="buttonH3">Shirt</p>
+                        <p class="buttonP">7 products</p>
+                    </button>
+                    <button class="buttonCuadro" data-filter=".sweater">
+                        <p class="buttonH3">Sweater</p>
+                        <p class="buttonP">5 products</p>
+                    </button>
+                    <button class="buttonCuadro" data-filter=".hoddie">
+                        <p class="buttonH3">Hoddie</p>
+                        <p class="buttonP">6 products</p>
+                    </button>
+                </div>
+                <div id="products" class="cuadriculaProductos"></div>
+            </div>
+
+
+
+
+
+
+             
+        <section class="cart">
+                <div class="cierreCart"><i class='bx bx-x iconoCierre'></i></div>
+                <div class="cart_products"></div>
+                <div class="cart_total">
+                    <div class="cart_total_info">
+                        <span id="totalItems">items 0</span>
+                        <span id="totalMoney">total</span>
+                    </div>
+                    <button class="btn_buy">
+                        Comprar
+                    </button>
+                </div>
+        </section>
+
+
+
+
+
+        
+            <section class="modal"></section>
+        
+       
+        
+        
+        
+        
+        
+        
+        
+       
+        </main>
+
+
+       
+        
+
+        <footer>
+            <section class="contenedor_footer">
+                <div class="itemContenedor">
+                    <h3>Our information</h3>
+                    <ul class="itemContenedorInfo">
+                        <li><a href="#">Toluca - México</a></li>
+                    </ul>
+                </div>
+                <div class="itemContenedor">
+                    <h3>About Us</h3>
+                    <ul class="itemContenedorInfo">
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Copy Right</a></li>
+                    </ul>
+                </div>
+                <div class="itemContenedor">
+                    <h3>Product</h3>
+                    <ul class="itemContenedorInfo">
+                        <li><a href="#">Hoodies</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sweatshirts</a></li>
+                    </ul>
+                </div>
+                <div class="itemContenedor">
+                    <h3>Social</h3>
+                    <ul class="footer_Redes_Sociales">
+                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </section>   
+        </footer>  
+        <div class="containerLast">
+            <div class="lastBox">
+                <p><b>Andrés Felipe Garzón Parra, anphillip7@gmail.com, <a href="#" id="repo">repositorio del proyecto final </a> y <a href="#" id="blog">el del blog personal</a> de la persona que lo realizo</b></p> 
+        </div>
+        </div>
+</body>
